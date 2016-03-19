@@ -14,6 +14,7 @@
 		1B03FD7B1C9DC429005F029D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B03FD7A1C9DC429005F029D /* Assets.xcassets */; };
 		1B03FD7E1C9DC429005F029D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B03FD7C1C9DC429005F029D /* LaunchScreen.storyboard */; };
 		1B03FD861C9E0DF2005F029D /* MDMovingGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03FD851C9E0DF2005F029D /* MDMovingGround.swift */; };
+		1B03FD881C9E1583005F029D /* MDHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03FD871C9E1583005F029D /* MDHero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1B03FD7D1C9DC429005F029D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B03FD7F1C9DC429005F029D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B03FD851C9E0DF2005F029D /* MDMovingGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMovingGround.swift; sourceTree = "<group>"; };
+		1B03FD871C9E1583005F029D /* MDHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDHero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1B03FD7C1C9DC429005F029D /* LaunchScreen.storyboard */,
 				1B03FD7F1C9DC429005F029D /* Info.plist */,
 				1B03FD851C9E0DF2005F029D /* MDMovingGround.swift */,
+				1B03FD871C9E1583005F029D /* MDHero.swift */,
 			);
 			path = UberNinja;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B03FD741C9DC429005F029D /* GameScene.swift in Sources */,
+				1B03FD881C9E1583005F029D /* MDHero.swift in Sources */,
 				1B03FD761C9DC429005F029D /* GameViewController.swift in Sources */,
 				1B03FD701C9DC429005F029D /* AppDelegate.swift in Sources */,
 				1B03FD861C9E0DF2005F029D /* MDMovingGround.swift in Sources */,
