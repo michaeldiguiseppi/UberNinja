@@ -11,6 +11,7 @@ import SpriteKit
 class GameScene: SKScene {
     
     var movingGround: MDMovingGround!
+    var hero: MDHero!
     
     
     override func didMoveToView(view: SKView) {
@@ -20,6 +21,10 @@ class GameScene: SKScene {
         movingGround = MDMovingGround(size: CGSizeMake(view.frame.size.width, 20))
         movingGround.position = CGPointMake(0, view.frame.size.height/2)
         addChild(movingGround)
+        
+        hero = MDHero()
+        hero.position = CGPointMake(70, movingGround.position.y + movingGround.frame.size.height/2 + hero.frame.size.height/2)
+        addChild(hero)
         
     }
     
