@@ -15,6 +15,9 @@
 		1B03FD7E1C9DC429005F029D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B03FD7C1C9DC429005F029D /* LaunchScreen.storyboard */; };
 		1B03FD861C9E0DF2005F029D /* MDMovingGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03FD851C9E0DF2005F029D /* MDMovingGround.swift */; };
 		1B03FD881C9E1583005F029D /* MDHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03FD871C9E1583005F029D /* MDHero.swift */; };
+		1B03FD8A1C9F428A005F029D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03FD891C9F428A005F029D /* Constants.swift */; };
+		1B03FD8C1C9F4410005F029D /* MDWallGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03FD8B1C9F4410005F029D /* MDWallGenerator.swift */; };
+		1B03FD8E1C9F441B005F029D /* MDWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03FD8D1C9F441B005F029D /* MDWall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1B03FD7F1C9DC429005F029D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B03FD851C9E0DF2005F029D /* MDMovingGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMovingGround.swift; sourceTree = "<group>"; };
 		1B03FD871C9E1583005F029D /* MDHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDHero.swift; sourceTree = "<group>"; };
+		1B03FD891C9F428A005F029D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B03FD8B1C9F4410005F029D /* MDWallGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDWallGenerator.swift; sourceTree = "<group>"; };
+		1B03FD8D1C9F441B005F029D /* MDWall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDWall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +75,19 @@
 				1B03FD7F1C9DC429005F029D /* Info.plist */,
 				1B03FD851C9E0DF2005F029D /* MDMovingGround.swift */,
 				1B03FD871C9E1583005F029D /* MDHero.swift */,
+				1B03FD891C9F428A005F029D /* Constants.swift */,
+				1B03FD8F1C9F442C005F029D /* Wall Generation */,
 			);
 			path = UberNinja;
+			sourceTree = "<group>";
+		};
+		1B03FD8F1C9F442C005F029D /* Wall Generation */ = {
+			isa = PBXGroup;
+			children = (
+				1B03FD8B1C9F4410005F029D /* MDWallGenerator.swift */,
+				1B03FD8D1C9F441B005F029D /* MDWall.swift */,
+			);
+			name = "Wall Generation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,11 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B03FD8E1C9F441B005F029D /* MDWall.swift in Sources */,
 				1B03FD741C9DC429005F029D /* GameScene.swift in Sources */,
 				1B03FD881C9E1583005F029D /* MDHero.swift in Sources */,
+				1B03FD8C1C9F4410005F029D /* MDWallGenerator.swift in Sources */,
 				1B03FD761C9DC429005F029D /* GameViewController.swift in Sources */,
 				1B03FD701C9DC429005F029D /* AppDelegate.swift in Sources */,
 				1B03FD861C9E0DF2005F029D /* MDMovingGround.swift in Sources */,
+				1B03FD8A1C9F428A005F029D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
