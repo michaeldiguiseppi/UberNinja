@@ -18,7 +18,7 @@ class MDWall: SKSpriteNode {
     override init(texture: SKTexture!, color: UIColor, size: CGSize) {
         super.init(texture: nil, color: WALL_COLOR, size: CGSizeMake(WALL_WIDTH, WALL_HEIGHT))
         
-        startMoving()
+        self.startMoving()
     }
 
     required init?(coder aDecoder: NSCoder) {

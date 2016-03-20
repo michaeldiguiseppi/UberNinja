@@ -43,9 +43,6 @@ class GameScene: SKScene {
         tapToStartLabel.position.x = view.center.x
         tapToStartLabel.position.y = view.center.y + 60
         tapToStartLabel.fontColor = UIColor.blackColor()
-        
-        
-        
         addChild(tapToStartLabel)
         
     }
@@ -59,8 +56,8 @@ class GameScene: SKScene {
         hero.stop()
         hero.startRunning()
         movingGround.start()
-        
         wallGenerator.startGeneratingWallsEvery(1)
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
