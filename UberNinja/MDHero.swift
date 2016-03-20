@@ -28,6 +28,34 @@ class MDHero: SKSpriteNode {
         face.position = CGPointMake(0, 6)
         body.addChild(face)
         
+        let eyeColor = UIColor.whiteColor()
+        let leftEye = SKSpriteNode(color: eyeColor, size: CGSizeMake(6, 6))
+        let rightEye = leftEye.copy() as! SKSpriteNode
+        let pupil = SKSpriteNode(color: UIColor.blackColor(), size: CGSizeMake(3, 3))
+        
+        pupil.position = CGPointMake(2, 0)
+        leftEye.addChild(pupil)
+        rightEye.addChild(pupil.copy() as! SKSpriteNode)
+        
+        leftEye.position = CGPointMake(-4, 0)
+        face.addChild(leftEye)
+        
+        rightEye.position = CGPointMake(14, 0)
+        face.addChild(rightEye)
+        
+        let eyebrow = SKSpriteNode(color: UIColor.blackColor(), size: CGSizeMake(11, 1))
+        eyebrow.position = CGPointMake(-1, leftEye.size.height/2)
+        leftEye.addChild(eyebrow)
+        rightEye.addChild(eyebrow.copy() as! SKSpriteNode)
+        
+        let armColor = UIColor(red: 46.0/255.0, green: 46.0/255.0, blue: 46.0/255.0, alpha: 1.0)
+        arm = SKSpriteNode(color: armColor, size: CGSizeMake(8, 14))
+        arm.anchorPoint = CGPointMake(0.5, 0.9)
+        arm.position = CGPointMake(-10, -7)
+        body.addChild(arm)
+        
+        let hand = SKSpriteNode(color: skinColor, size: CGSizeMake(arm.size.width, 5))
+        hand.position = CGPointMake(0, -arm.size.height*0.9 + hand.size.height/2)
         
     }
     
