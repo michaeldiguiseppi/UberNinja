@@ -18,8 +18,15 @@ class MDHero: SKSpriteNode {
     var isUpsideDown = false
     
     override init(texture: SKTexture!, color: UIColor, size: CGSize) {
-        super.init(texture: nil, color: UIColor.clearColor(), size: CGSizeMake(32, 44))
+        let size = CGSizeMake(32, 44)
+        super.init(texture: nil, color: UIColor.clearColor(), size: size)
         
+        loadAppearance()
+        loadPhysicsBodyWithSize(size)
+        
+    }
+    
+    func loadAppearance() {
         body = SKSpriteNode(color: UIColor.blackColor(), size: CGSizeMake(self.frame.size.width, 40))
         body.position = CGPointMake(0, 2)
         addChild(body)
@@ -66,7 +73,13 @@ class MDHero: SKSpriteNode {
         rightFoot = leftFoot.copy() as! SKSpriteNode
         rightFoot.position.x = 8
         addChild(rightFoot)
-
+    }
+    
+    func loadPhysicsBodyWithSize(size: CGSize) {
+        physicsBody = SKPhysicsBody(rectangleOfSize: size)
+        physicsBody?.categoryBitMask = heroCategory
+        physicsBody?.contactTestBitMask = wallCategory
+        physicsBody?.affectedByGravity = false
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -126,6 +139,8 @@ class MDHero: SKSpriteNode {
     
     func stop() {
         body.removeAllActions()
+        leftFoot.removeAllActions()
+        rightFoot.removeAllActions()
     }
     
     

@@ -76,18 +76,10 @@
 				1B03FD851C9E0DF2005F029D /* MDMovingGround.swift */,
 				1B03FD871C9E1583005F029D /* MDHero.swift */,
 				1B03FD891C9F428A005F029D /* Constants.swift */,
-				1B03FD8F1C9F442C005F029D /* Wall Generation */,
-			);
-			path = UberNinja;
-			sourceTree = "<group>";
-		};
-		1B03FD8F1C9F442C005F029D /* Wall Generation */ = {
-			isa = PBXGroup;
-			children = (
 				1B03FD8B1C9F4410005F029D /* MDWallGenerator.swift */,
 				1B03FD8D1C9F441B005F029D /* MDWall.swift */,
 			);
-			name = "Wall Generation";
+			path = UberNinja;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
